@@ -1,7 +1,6 @@
 package com.salesianos.actividad2;
-
-import java.io.FileReader;
 import java.io.File;
+import java.io.FileReader;
 
 public class Main {
 
@@ -13,8 +12,9 @@ public class Main {
         for (int i = 0; i < tamTexto; i++) {
             int caracter = lecturaArchivo.read();
             if (caracter != -1) {
-                System.out.print((char)caracter + "_" + caracter + ", ");
+                System.out.print((char) caracter + "_" + caracter + ", ");
             }
         }
+        lecturaArchivo.close();
     }
 }
