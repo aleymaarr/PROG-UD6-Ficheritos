@@ -24,7 +24,7 @@ public class Main {
                 System.out.println("Archivo creado");
             }
         } catch (Exception e) {
-
+            System.out.println("Archivo no creado");
         }
 
         fileWriter.write("actividad1: " + bufferedReader1.readLine() + "\n");
